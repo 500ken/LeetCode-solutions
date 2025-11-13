@@ -16,3 +16,5 @@ def consecutive_numbers(logs: pd.DataFrame) -> pd.DataFrame:
 
     # Step 4: 回傳結果，欄位改成題目要求
     return result.rename(columns={'num': 'ConsecutiveNums'})
+#排序 + fillna(True) 是關鍵
+#排序保證順序正確，fillna(True) 修正第一行 NA
