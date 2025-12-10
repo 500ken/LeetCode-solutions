@@ -1,0 +1,20 @@
+[33mcommit 583379e93f5a867765934201ce0271a39c26001d[m[33m ([m[1;31morigin/main-fix[m[33m, [m[1;32mmain-fix[m[33m)[m
+Author: 500ken <ken500bear@gmail.com>
+Date:   Thu Nov 13 22:55:06 2025 +0800
+
+    Update leetcode 180.py
+
+[1mdiff --git a/180_Consecutive_Numbers.py b/180_Consecutive_Numbers.py[m
+[1mindex b1dd819..9a5ad2f 100644[m
+[1m--- a/180_Consecutive_Numbers.py[m
+[1m+++ b/180_Consecutive_Numbers.py[m
+[36m@@ -15,4 +15,6 @@[m [mdef consecutive_numbers(logs: pd.DataFrame) -> pd.DataFrame:[m
+     #print(group_counts)[m
+ [m
+     # Step 4: 回傳結果，欄位改成題目要求[m
+[31m-    return result.rename(columns={'num': 'ConsecutiveNums'})[m
+\ No newline at end of file[m
+[32m+[m[32m    return result.rename(columns={'num': 'ConsecutiveNums'})[m
+[32m+[m[32m#排序 + fillna(True) 是關鍵[m
+[32m+[m[32m#排序保證順序正確，fillna(True) 修正第一行 NA[m
+\ No newline at end of file[m
